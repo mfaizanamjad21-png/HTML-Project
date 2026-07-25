@@ -27,7 +27,9 @@ section {
   padding: 0 24px;
 }
 
-/* NAVIGATION */
+/* =======================
+   NAVIGATION
+======================= */
 
 nav {
   height: 70px;
@@ -58,7 +60,9 @@ a {
   font-weight: 700;
 }
 
-/* HEADER */
+/* =======================
+   HEADER
+======================= */
 
 header {
   background-color: #e0f7fa;
@@ -101,7 +105,9 @@ figure {
   width: 40%;
 }
 
-/* ABOUT */
+/* =======================
+   ABOUT
+======================= */
 
 #about {
   background-color: #f8f8f8;
@@ -134,21 +140,33 @@ h2 {
   width: 40%;
 }
 
-/* DISCORD */
+/* =======================
+   DISCORD
+======================= */
 
 #discord {
   background-color: #e6f4ff;
 }
 
+#discord .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .discord_img--wrapper {
   width: 40%;
+  margin-bottom: 32px;
 }
 
-.discord_img--wrapper img {
-  width: 100%;
+#discord .section--description--wrapper {
+  width: 60%;
+  text-align: center;
 }
 
-/* CONTACT */
+/* =======================
+   CONTACT
+======================= */
 
 #contact {
   background-color: #e0f7fa;
@@ -178,6 +196,10 @@ textarea {
   resize: vertical;
 }
 
+/* =======================
+   FOOTER
+======================= */
+
 footer {
   background-color: #242424;
   color: white;
@@ -199,9 +221,12 @@ footer .logo {
   margin: 0 auto 24px;
 }
 
-/* MOBILE */
+/* =======================
+   TABLET
+======================= */
 
 @media (max-width: 768px) {
+
   header .row,
   .section--description {
     flex-direction: column;
@@ -225,5 +250,40 @@ footer .logo {
 
   .subheader {
     font-size: 20px;
+  }
+}
+
+/* =======================
+   SMALL PHONES
+======================= */
+
+@media (max-width: 726px) {
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home__description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .subheader {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .home__description--button {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
   }
 }

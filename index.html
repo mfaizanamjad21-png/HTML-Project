@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Simplified</title>
-  <link rel="stylesheet" href="./Style.CSS">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
+  <!-- Navigation -->
   <section>
     <nav>
       <img src="./assets/FES.svg" class="logo" alt="Frontend Simplified Logo">
+
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#discord">Discord</a></li>
@@ -18,129 +20,149 @@
       </ul>
     </nav>
 
+    <!-- Header -->
     <header>
       <div class="row">
-        <div>
+
+        <div class="home__description">
           <h1>Best Place to Learn Frontend</h1>
+
           <p class="subheader">
-            Go from being an absolute beginner to pro with a simplified process.
+            Go from being an absolute beginner to a professional with a simplified process.
           </p>
-          <button>Start Now</button>
+
+          <button class="home__description--button">
+            Start Now
+          </button>
         </div>
 
-      <figure>
-        <img src="./assets/laptop.png" alt="Home Page ">
-      </figure>
+        <figure>
+          <img src="./assets/laptop.png" alt="Laptop">
+        </figure>
+
+      </div>
     </header>
   </section>
 
   <main>
 
+    <!-- About -->
     <section id="about">
       <div class="row">
+
         <h2>About</h2>
-      <div class="section--description">
-      <div class="section--description--wrapper">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Magni, iste, ad deleniti, quam at ex odit ratione officiis
-          dolor necessitatibus impedit.
-        </p>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Magni, iste, ad deleniti, quam at ex odit ratione officiis
-          dolor necessitatibus impedit.
-        </p>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Magni, iste, ad deleniti, quam at ex odit ratione officiis
-          dolor necessitatibus impedit.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Magni, iste, ad deleniti, quam at ex odit ratione officiis
-          dolor necessitatibus impedit.
-        </p>
-      </div>
-
-      <figure class="about_img--wrapper">
-        <img src="./assets/about.jpg" alt="About">
-      </figure>
-    </section>
-
-    <section id="discord">
-      <div class="row"></div>
-      <h2>Discord</h2>
-
-      <figure class="discord_img--wrapper">
         <div class="section--description">
-      <img src="./assets/discord.png" alt="Discord">
-      </figure>
 
-      <div class="section--description--wrapper">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Ullam, laboriosam sunt aut nemo numquam natus veritatis
-          alias aperiam odit eius praesentium eum sapiente.
-        </p>
+          <div class="section--description--wrapper">
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Quo tenetur tempora quasi aut, quae possimus laudantium
-          nisi blanditiis, voluptatibus nemo dolorum earum.
-        </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Magni, iste, ad deleniti, quam at ex odit ratione officiis
+              dolor necessitatibus impedit.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Magni, iste, ad deleniti, quam at ex odit ratione officiis
+              dolor necessitatibus impedit.
+            </p>
+
+
+            </p>
+
+          </div>
+
+          <figure class="about_img--wrapper">
+            <img src="./assets/about.jpg" alt="About">
+          </figure>
+
+        </div>
+
       </div>
     </section>
 
+    <!-- Discord -->
+    <section id="discord">
+      <div class="row">
+
+        <h2>Discord</h2>
+
+        <figure class="discord_img--wrapper">
+          <img src="./assets/discord.png" alt="Discord">
+        </figure>
+
+        <div class="section--description--wrapper">
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ullam, laboriosam sunt aut nemo numquam natus veritatis alias
+            aperiam odit eius praesentium eum sapiente.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo tenetur tempora quasi aut, quae possimus laudantium nisi
+            blanditiis, voluptatibus nemo dolorum earum.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact">
-      <h2>Contact</h2>
+      <div class="row">
 
-      <form>
-        <div>
-          <label for="email">Email</label>
-          <br>
-          <input
-            id="email"
-            type="email"
-            placeholder="jane@example.com"
-          >
-        </div>
+        <h2>Contact</h2>
 
-        <br>
+        <form>
 
-        <div>
-          <label for="message">Message</label>
-          <br>
-          <textarea
-            id="message"
-            rows="5"
-            cols="30"
-            placeholder="Enter your message"
-          ></textarea>
-        </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="jane@example.com"
+            >
+          </div>
 
-        <br>
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
 
-        <button type="submit">Send</button>
-      </form>
+          <button type="submit">Send</button>
+
+        </form>
+
+      </div>
     </section>
 
   </main>
 
+  <!-- Footer -->
   <footer>
-    <img src="./assets/FES.svg" alt="Frontend Simplified Logo">
+
+    <img
+      src="./assets/FES.svg"
+      class="logo"
+      alt="Frontend Simplified Logo"
+    >
 
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#discord">Discord</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#course">Course</a></li>
     </ul>
 
-    <p>Copyright Frontend Simplified</p>
+    <p>Copyright © Frontend Simplified</p>
+
   </footer>
 
 </body>
